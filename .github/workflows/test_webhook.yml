@@ -1,13 +1,8 @@
-name:  Test Webhook - frontend
+# This is a basic workflow that is manually triggered
+name: Test Webhook
 
 # Controls when the action will run. Workflow runs when manually triggered using the UI or API.
 on:
-# Trigger on push to main branch when frontend files change
-  push:
-    branches: [main]
-    paths:
-      - 'pf-frontend/**'
-      - '.github/workflows/test.yml'
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
